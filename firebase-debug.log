@@ -1,0 +1,67 @@
+[debug] [2026-07-17T19:15:18.198Z] ----------------------------------------------------------------------
+[debug] [2026-07-17T19:15:18.200Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AADARSH\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2026-07-17T19:15:18.200Z] CLI Version:   15.24.0
+[debug] [2026-07-17T19:15:18.200Z] Platform:      win32
+[debug] [2026-07-17T19:15:18.200Z] Node Version:  v24.18.0
+[debug] [2026-07-17T19:15:18.200Z] Detected Agent: unknown
+[debug] [2026-07-17T19:15:18.200Z] Time:          Sat Jul 18 2026 01:00:18 GMT+0545 (Nepal Time)
+[debug] [2026-07-17T19:15:18.201Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-17T19:15:18.211Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\AADARSH\.gemini\antigravity\scratch\momentum
+
+[debug] [2026-07-17T19:15:23.507Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-07-17T19:15:23.507Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-07-17T19:15:31.203Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-17T19:15:31.204Z] > authorizing via signed-in user (adarshghimire2@gmail.com)
+[debug] [2026-07-17T19:15:31.205Z] Checked if tokens are valid: false, expires at: 1783236759451
+[debug] [2026-07-17T19:15:31.205Z] Checked if tokens are valid: false, expires at: 1783236759451
+[debug] [2026-07-17T19:15:31.205Z] > refreshing access token with scopes: []
+[debug] [2026-07-17T19:15:31.206Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-07-17T19:15:31.206Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-17T19:15:31.461Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-07-17T19:15:31.461Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-17T19:15:31.471Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-07-17T19:15:32.273Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-07-17T19:15:32.273Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Hosting Setup
+[info] 
+[debug] [2026-07-17T19:17:32.694Z] Checked if tokens are valid: true, expires at: 1784319330461
+[debug] [2026-07-17T19:17:32.695Z] Checked if tokens are valid: true, expires at: 1784319330461
+[debug] [2026-07-17T19:17:32.695Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/momentum-habit-tracker-62d82 [none]
+[debug] [2026-07-17T19:17:33.240Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/momentum-habit-tracker-62d82 200
+[debug] [2026-07-17T19:17:33.240Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/momentum-habit-tracker-62d82 {"projectId":"momentum-habit-tracker-62d82","projectNumber":"1002397423565","displayName":"momentum-habit-tracker","name":"projects/momentum-habit-tracker-62d82","resources":{"hostingSite":"momentum-habit-tracker-62d82"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_bbf7cc68-094e-4071-8125-69718e1aa5ef"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2026-07-17T19:17:35.566Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\AADARSH\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:509:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1327:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:284:20)
+    at ReadStream.emit (node:events:521:24)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:509:28)
+    at addChunk (node:internal/streams/readable:563:12)
+[error] 
+[error] Error: An unexpected error has occurred.
